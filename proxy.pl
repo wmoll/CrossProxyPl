@@ -42,9 +42,9 @@ while (1) {
 	$req->content( $json );
 
 	my $lwp = LWP::UserAgent->new;
-	my $response = $lwp->request( $req );
+	my $response2 = $lwp->request( $req );
 	
-	print $response->as_string();
+	print $response2->as_string();
     
     sleep($waketime-time);
 }
